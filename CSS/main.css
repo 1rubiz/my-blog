@@ -1,0 +1,111 @@
+@import url(import_1.css);/* controls dark themed background and grid container*/
+@import url(import_2.css);/*controls content and side bar and content position on the grid and it's style*/
+@import url(import_3.css);/*controls button styling, footer position and styling and the image styling*/
+
+/*Media quary*/
+@media(min-width: 800px) {
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: repeat(100px, auto);
+        grid-template-areas:"fr fr fr fr fr"
+        "tr sr sr sr zr"
+        "tr sr sr sr zr" 
+        "tr dr dr dr zr"
+        "pr pr pr pr pr";
+    }
+    
+    .sub_header {
+        text-align: center;
+    }
+
+    .side_bars{
+        grid-area: zr;
+        border: #595c5c solid 1px;
+    }
+
+    h1{
+        padding-left: 20px;
+    }
+    
+    .pic_1 {
+        grid-area: sr;
+    }
+
+    .pic_1 img {
+        height: 400px;
+        width: 100%;
+    }
+    
+    .side_bar {
+        grid-area: tr;
+        border: 0px solid white;
+    }
+    
+    .headie {
+        grid-area: fr;
+        background-color: #595c5c;
+    }
+    
+    .contents {
+        grid-area: dr;
+    }
+    
+    button {
+        size: 100px;
+        border-radius: 2px;
+        background-color: #78d6cd;
+    }
+    
+    button:hover {
+        background-color: #d1d1d1;
+    }
+
+    .footing {
+        float: left;
+     }
+     
+     .foot {
+         grid-area: cr;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-content: center;
+         width: 100%;
+         background-color: #595c5c;
+         color: #d1d1d1;
+         padding: 20px;
+     }
+     
+     .register {
+         padding-left: 170px;
+         padding-right: 170px;
+     }
+
+     .nav_ba,
+      h1 {
+          display: inline;
+          /*padding-left: 15px;
+          padding-right: 500px;*/
+      }
+
+     .nav_ba {
+         display: flex;
+         flex-direction: row;
+         align-items: space-around;
+         justify-items: center;
+     }
+
+     .link_list{
+         float: left;
+         list-style-type: none;
+         padding-top: 30px;
+         padding-right: 30px;
+         position: absolute;
+         top: 0px;
+         right: 0px;
+     }
+
+    
+}

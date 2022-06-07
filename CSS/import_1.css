@@ -1,0 +1,52 @@
+/*Dark themed blog*/
+body {
+    background-color: black;
+    color: #d1d1d1;    
+}
+
+/*container with grid*/
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(100px, auto);
+    grid-template-areas:"fr fr"
+    "sr sr"
+    "dr dr" 
+    "dr dr"
+    "tr tr"
+    "pr pr";
+}
+
+.box {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sub_header {
+    text-align: center;
+}
+
+#tech {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+
+.headie {
+    grid-area: fr;
+}
+
+h4{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

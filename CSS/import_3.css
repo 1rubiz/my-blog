@@ -1,0 +1,48 @@
+button {
+    size: 100px;
+    border-radius: 2px;
+    background-color: #78d6cd;
+}
+
+/*changes the button color when you hover over it*/
+button:hover {
+    background-color: #d1d1d1;
+}
+
+/*remove underlines from the links*/
+.link_list{
+    list-style-type: none;
+}
+
+.pic_1 {
+    grid-area: sr;
+}
+
+.pic_1,
+ img {
+    height: 400px;
+    width: 95%;
+}
+
+.footing {
+    grid-area: pr;
+    text-align: center;   
+    color: #d1d1d1;
+}
+
+.register {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/*places the footer's content at the middle*/
+.foot {
+    grid-area: cr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: #595c5c;
+    color: #d1d1d1;    
+    padding-bottom: 20px;
+}
